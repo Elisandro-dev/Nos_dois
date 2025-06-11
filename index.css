@@ -1,68 +1,45 @@
-body {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+body.menu {
+  margin: 0;
+  padding: 0;
+  background: url("fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Great Vibes', cursive;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
 }
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-}
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-    position: relative;
-}
-.heart {
-    display: inline-block;
-    font-size: 24px;
-    animation: pulse 1.5s infinite;
-    color: red;
-}
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}
-.photo {
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-img {
-    width: 100%;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
-}
-img:hover {
-    transform: scale(1.05);
-}
-.caption {
-    font-size: 20px;
-    font-style: italic;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 10px;
-}
-.footer {
-    margin-top: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    opacity: 0.8;
-    font-size: 12px;
 
-    
+.container.menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
 }
-audio {
-    margin-top: 20px;
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.botao {
+  background-color: #ff69b4;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #ff1493;
 }
